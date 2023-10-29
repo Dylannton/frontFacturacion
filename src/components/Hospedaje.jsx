@@ -11,13 +11,41 @@ function Hospedaje({ objeto }) { // Cambiamos props a objeto
                 <p className="fw-bold text-light">Detalle de hospedaje</p>
             </div>
             <hr />
-            <p className="text-light">Nombre de la Habitación: {infoPaquete.nombre_opcion_hotel}</p>
-            <p className="text-light">Descripción de la Habitación: {infoPaquete.descripcion_habitacion}</p>
-            <p className="text-light">Servicios de la Habitación: {infoPaquete.servicios_habitacion}</p>
-            <p className="text-light">Precio por Noche: {infoPaquete.precio_noche}</p>
-            <p className="text-light">Nombre del Hotel: {infoPaquete.hotel_info.nombre}</p>
-            <p className="text-light">Descripción del Hotel: {infoPaquete.hotel_info.descripcion_hotel}</p>
-            <p className="text-light">Servicios del Hotel: {infoPaquete.hotel_info.servicios_hotel}</p>
+            <div className="d-flex justify-content-around">
+            <div>
+                <p className="text-dark fs-6 mb-0">Nombre de la Habitación</p> 
+                <p className="text-light fs-6">{infoPaquete.nombre_opcion_hotel}</p>
+            </div>
+              <div>
+              <p className="text-dark fs-6 mb-0">Descripción de la Habitación</p> 
+              <p className="text-light fs-6">{infoPaquete.descripcion_habitacion}</p>
+              </div>
+            </div>
+          <div className="d-flex justify-content-around">
+            <div>
+                <p className="text-dark fs-6 mb-0">Servicios de la Habitación</p> 
+                <p className="text-light fs-6">{infoPaquete.servicios_habitacion}</p>
+            </div>
+          </div> 
+           <div className="d-flex justify-content-around">
+            <div>
+               <p className="text-dark fs-6 mb-0">Nombre del Hotel</p> 
+               <p className="text-light fs-6">{infoPaquete.hotel_info.nombre}</p>
+            </div>
+            <div>
+                 <p className="text-dark fs-6 mb-0">Descripción del Hotel</p> 
+                <p className="text-light fs-6">{infoPaquete.hotel_info.descripcion_hotel}</p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-around">
+            <div>
+                <p className="text-dark fs-6 mb-0">Servicios del Hotel</p> 
+                <p className="text-light fs-6">{infoPaquete.hotel_info.servicios_hotel}</p> 
+            </div>
+          </div>
+           <div className="d-flex justify-content-around">
+              <i class="bi bi-cash-coin p-2">Precio por Noche: {infoPaquete.precio_noche}</i>
+          </div> 
         </div>
     );
 }
