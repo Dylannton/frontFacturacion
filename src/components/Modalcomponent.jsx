@@ -3,8 +3,6 @@ import jsPDF from 'jspdf';
 import './ModalComponent.css';
 
 const ModalComponent = () => {
-const modalContent = document.querySelector('.modal-content');
-modalContent.style.height = modalContent.scrollHeight + 'px';
 
   function crearPDF() {
     const doc = new jsPDF();
@@ -43,7 +41,7 @@ modalContent.style.height = modalContent.scrollHeight + 'px';
               </div>
               <div className="vertical-line"
               ></div>
-              <div className="content-text" style={{ marginTop: '25px' }}>
+              <div className="content-text" style={{ marginTop: '10px' }}>
               <p><h5 style={{ whiteSpace: 'nowrap' }}>Agencia de Viajes</h5></p>
               <p><h6 style={{ whiteSpace: 'nowrap' }}>Utem Travels Ltda</h6></p>
               </div>
