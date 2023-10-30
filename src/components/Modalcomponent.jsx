@@ -28,30 +28,59 @@ const ModalComponent = () => {
   return (
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog modal-lg">
-        <div className="modal-content" style={{  width: '80vh', height: "90vh ", maxHeight: "90vh" }}>
+        <div className="modal-content" style={{ width: '90%', maxHeight: '80vh', overflowY: 'auto' }}>
           <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalLabel">RESUMEN DE DATOS</h5>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          
+  
           <div className="modal-body">
             <div className="content-wrapper">
               <div className="content-image">
-                <img src="/logo.png" alt="Logo" style={{ width: '100px', height: '100px' }} />
+                <img src="/logo.png" alt="Logo" style={{ width: '135px', height: '135px' }} />
               </div>
-              <div className="vertical-line"
-              ></div>
-              <div className="content-text" style={{ marginTop: '10px' }}>
-              <p><h5 style={{ whiteSpace: 'nowrap' }}>Agencia de Viajes</h5></p>
-              <p><h6 style={{ whiteSpace: 'nowrap' }}>Utem Travels Ltda</h6></p>
+              <div className="vertical-line"></div>
+              <div className="content-text" style={{ marginTop: '3px' }}>
+                <p><h5 style={{ marginBottom: '0px', whiteSpace: 'nowrap' }}>Agencia de Viajes</h5></p>
+                <p style={{ marginBottom: '0px', whiteSpace: 'nowrap', fontSize: '20px'}}>Utem Travels Ltda</p>
+                <p style={{ marginBottom: '2px', whiteSpace: 'nowrap' }}>Casa XX, LAS PALMERAS N°133</p>
+                <p style={{ marginBottom: '2px', whiteSpace: 'nowrap' }}>SANTIAGO, CHILE</p>
+                <p style={{ marginBottom: '2px', whiteSpace: 'nowrap' }}>XXXXXXXXXXXXXXXX</p>
+                <p style={{ marginBottom: '2px', whiteSpace: 'nowrap' }}>XXXXXXXXXXXXXX</p>
+                <p style={{ marginBottom: '2px', whiteSpace: 'nowrap' }}>XXXXXXXXXXXX</p>
               </div>
             </div>
-          </div>
-          <div className="additional-info">
-            <p>R.U.T: XX.XXX.XXX - X</p>
-             <p>FACTURA ELECTRONICA</p>
-             <p>N°123</p>
-             </div>
+  
+            <div className="additional-info">
+              <p><h6>R.U.T: XX.XXX.XXX - X</h6></p>
+              <p><h6>FACTURA ELECTRONICA</h6></p>
+              <p><h6>N°123</h6></p>
+            </div>
+  
+            <div className="cliente">
+              <p style={{ marginBottom: '2px' }}>Señor(a)</p>
+              <p style={{ marginBottom: '2px' }}>XXXXX XXXXX XXXXX XXXXX</p>
+              <p style={{ marginBottom: '2px' }}>XXXXXXX</p>
+              <p style={{ marginBottom: '2px' }}>XXXXXXXXXXXX</p>
+              <p style={{ marginBottom: '2px' }}>XXXXXXXXXXXXXXXXXXXXX</p>
+              <p style={{ marginBottom: '2px' }}>XXXXXXXXXXXXXXXXXXXXXXX</p>
+            </div>
+
+            <div className="contenedor-categorias">
+              <div className="caja-grande">
+                 <div className="columna">Código</div>
+                 <div className="columna">Descripción</div>
+                 <div className="columna">Cantidad</div>
+                 <div className="columna">Precio</div>
+                 <div className="columna">XXX</div>
+                 <div className="columna">XXX</div>
+                 <div className="columna">XXX</div>
+              </div>
+              <div className="casilla-grande">
+                <textarea placeholder="Escribe aquí..." />
+                </div>
+              </div>
+            </div>
+  
           <div className="modal-footer">
             <button type="button" className="btn btn-primary" onClick={crearPDF}>Descargar documento PDF</button>
           </div>

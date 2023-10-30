@@ -12,7 +12,7 @@
 
   .content-text {
     color: #333;
-    font-size: 35px;
+    font-size: 10px;
     margin-top: 100px;
 
   }
@@ -26,9 +26,60 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  top: 80px;
+  top: 15px;
   right: 35px;
   background-color: #fff;
   border: 1px solid #000000;
   padding: 10px;
+}
+
+.cliente {
+  position: absolute;
+  flex-direction: column;
+  align-items: left;
+  top: 185px; /* Ajusta la posición vertical según sea necesario */
+  left: 15px; /* Ajusta la posición horizontal según sea necesario */
+  font-size: small;
+}
+
+
+/*CAJA GRANDE CON COLUMNAS */ 
+.caja-grande {
+    display: flex;
+    border: 1px solid #000;
+    margin-top: 150px;
+    overflow-x: auto; /* Agregar desplazamiento horizontal */
+    overflow-y: auto; /* Agregar desplazamiento vertical */
+}
+
+.columna {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+  border-right: 1px solid #000;
+}
+
+.columna:last-child {
+  border-right: none;
+}
+
+.casilla-grande {
+  border: 1px solid #000;
+  margin-top: -1px; /* Superpone ligeramente sobre las categorías */
+  padding: 5px;
+}
+
+.casilla-grande textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  .additional-info {
+    display: none;
+  }
 }
