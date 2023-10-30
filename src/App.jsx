@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import Button from 'react-bootstrap/Button'
 import reservaMock from './mocks/reserva'
 import NavBar from './components/NavBar'
+import ModalComponent from './components/Modalcomponent'
 
 function App() {
 
@@ -95,14 +96,16 @@ function App() {
 
             <div className="m-3">
 
-              <Button className="buscar" variant="warning" onClick={handleSubmit}>
+            <Button className="buscar" variant="warning" onClick={handleSubmit} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 CONFIRMAR DATOS INGRESADOS
               </Button>
               <Button className="redireccionar" variant="warning" onClick={BotonRedireccionExterna}>
                 Ir a pagar
               </Button>
+            
 
             </div>
+            <ModalComponent />
 
 
 
