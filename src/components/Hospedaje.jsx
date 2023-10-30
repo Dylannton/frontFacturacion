@@ -24,8 +24,9 @@ function Hospedaje({ objeto }) { // Cambiamos props a objeto
           <div className="d-flex justify-content-around">
             <div>
                 <p className="text-dark fs-6 mb-0">Servicios de la Habitación</p> 
-                <p className="text-light fs-6">{infoPaquete.servicios_habitacion}</p>
+                <p className="text-light fs-6 mb-5">{infoPaquete.servicios_habitacion}</p>
             </div>
+            <hr />
           </div> 
            <div className="d-flex justify-content-around">
             <div>
@@ -40,11 +41,12 @@ function Hospedaje({ objeto }) { // Cambiamos props a objeto
           <div className="d-flex justify-content-around">
             <div>
                 <p className="text-dark fs-6 mb-0">Servicios del Hotel</p> 
-                <p className="text-light fs-6">{infoPaquete.hotel_info.servicios_hotel}</p> 
+                <p className="text-light fs-6 mb-5">{infoPaquete.hotel_info.servicios_hotel}</p> 
             </div>
           </div>
+          <hr />
            <div className="d-flex justify-content-around">
-              <i class="bi bi-cash-coin p-2">Precio por Noche: {infoPaquete.precio_noche}</i>
+              <i class="bi bi-cash-coin p-2"> Precio por Noche: {infoPaquete.precio_noche}</i>
           </div> 
         </div>
     );
