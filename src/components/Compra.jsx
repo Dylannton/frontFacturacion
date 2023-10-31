@@ -26,6 +26,7 @@ function Compra({ objeto }) { // Cambiamos props a objeto
             <i class="bi bi-alarm-fill fs-6"> Hora de Fin: {vueloInfo.hora_fin}</i>
             </div>
             <p className="d-flex justify-content-center text-dark fs-6">Escalas: {vueloInfo.escalas}</p>
+            <p></p>
         </div>
     );
 }
