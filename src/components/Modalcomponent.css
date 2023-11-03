@@ -71,12 +71,20 @@
 
 .casilla-grande textarea {
   width: 100%;
-  height: 100px;
+  height: 200px;
   border: none;
   outline: none;
   resize: none;
 }
 
+.casilla-grande1 {
+  border: 1px solid #000;
+  margin-top: 0px;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  float: right; /* Posicionar a la derecha */
+}
 
 @media screen and (max-width: 992px) {
   .additional-info {

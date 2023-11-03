@@ -78,6 +78,9 @@ const ModalComponent = () => {
               <div className="casilla-grande">
                 <textarea placeholder="Escribe aquí..." />
                 </div>
+                <div className="casilla-grande1">
+                  *INSERTAR DATOS ACÁ.*
+                  </div>
               </div>
             </div>
   
