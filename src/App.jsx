@@ -105,7 +105,6 @@ function App() {
             
 
             </div>
-            <ModalComponent />
 
 
 

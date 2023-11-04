@@ -79,7 +79,7 @@ const ModalComponent = () => {
                 <textarea placeholder="Escribe aquí..." />
                 </div>
                 <div className="casilla-grande1">
-                  *INSERTAR DATOS ACÁ.*
+                  *INSERTAR DATOS ACÁ*
                   </div>
               </div>
             </div>
